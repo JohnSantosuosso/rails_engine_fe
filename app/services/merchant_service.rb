@@ -3,7 +3,11 @@ class MerchantService
     def call_for_all_merchants
       response = connection.get("/api/v1/merchants")
       parse_data(response)
+    end
 
+    def call_for_a_merchant(merchant_id)
+      response = connection.get("/api/v1/merchants/#{merchant_id}")
+      parse_data(response)
     end
 
 
