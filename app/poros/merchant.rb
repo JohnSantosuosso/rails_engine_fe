@@ -4,8 +4,5 @@ class Merchant
   def initialize(merchant_info)
     @id = merchant_info[:id]
     @name = merchant_info[:attributes][:name]
-    require 'pry'; binding.pry 
   end
-
-
 end

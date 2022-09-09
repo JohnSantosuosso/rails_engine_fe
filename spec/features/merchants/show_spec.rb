@@ -6,5 +6,7 @@ RSpec.describe 'Merchants' do
 
   expect(page).to have_content("Name: Schroeder-Jerde")
 
+  expect(page).to have_content("Item Nemo Facere")
+
   end
 end
